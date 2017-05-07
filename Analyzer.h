@@ -9,14 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Analyzer : NSObject
-{
-    NSString* s;
-}
 
--(NSArray*)getWords:(NSString*)text;
+-(NSMutableDictionary*)getStatistics:(NSString*)text;
 
--(NSDictionary*)getStatistics:(NSArray*)array;
-
--(void)printStatistics;
+-(void)printStatistics:(NSString*)text;
 
 @end

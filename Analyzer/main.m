@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Analyzer.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSLog(@"Hello, World!");
+        NSString* s = @"a a a b b aa a 12 afse yhr 345 345 sdfr 345";
+        Analyzer* a = [[Analyzer alloc] init];
+        [a printStatistics:s];
     }
     return 0;
 }
